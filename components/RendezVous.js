@@ -43,7 +43,10 @@ export default function RendezVous({ navigation, route }, props) {
 
             <View style={styles.calendar}>
                 <Text>Prendre Rendez-vous</Text>
-                <TextInput></TextInput>
+                <TextInput
+                    style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+                    onChangeText={text => setTitle(text)}
+                ></TextInput>
             </View>
 
         </View>
